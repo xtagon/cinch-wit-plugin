@@ -1,6 +1,11 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'cinch/wit/version'
+
 Gem::Specification.new do |spec|
 	spec.name          = 'cinch-wit'
-	spec.version       = '0.0.1'
+	spec.version       = Cinch::Wit::VERSION
 	spec.authors       = ['Justin Workman']
 	spec.email         = ['xtagon@gmail.com']
 	spec.summary       = "A Cinch plugin for the Wit API"

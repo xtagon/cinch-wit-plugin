@@ -31,7 +31,8 @@ Note: This guide expects you to already have basic familiarity of [Cinch][2] and
 After installing the gem, register the plugin in your Cinch bot, like so:
 
 ``` ruby
-require 'cinch/plugins/wit'
+require 'cinch'
+require 'cinch/wit'
 
 bot = Cinch::Bot.new do
     configure do |c|
